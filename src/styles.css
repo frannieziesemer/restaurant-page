@@ -26,7 +26,8 @@ body {
 }
 
 #tabs-block button.active {
-  border-bottom: solid 2px #000c6b;
+  color: #a2adffbb;
+  border-bottom: solid 2px #a2adffbb;
 }
 
 #tabs-block button.active:hover {
@@ -61,4 +62,20 @@ font-size: 20px;
   width: 70vmin;
   color: #a2adffbb;
   text-align: justify;
+}
+
+#links {
+  color: #000c6b;
+  font-family: 'Barlow Condensed', sans-serif;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+}
+#git-link, #photo-cred {
+  display: block;
+}
+
+a {
+  color: #b5bdff;
+
 }
