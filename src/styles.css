@@ -1,0 +1,34 @@
+body {
+  margin: 0px auto;
+  height: 100%;
+  background-color: #b0b9ff;
+}
+#header-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0px auto;
+  height: 75vmin;
+  background-color: #505DBF;
+  background-image: url('/src/images/melon.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+#title {
+  margin: 0px;
+  color: #FFBF00;
+  opacity: 80%;
+  font-family: 'Barlow', sans-serif;
+}
+#tabs-block h2 {
+  display: inline;
+  font-family: 'Barlow Condensed', sans-serif;
+  margin: 20px;
+  color: #FFBF00;
+}
+
+p {
+font-family: 'Barlow Condensed', sans-serif;
+}
