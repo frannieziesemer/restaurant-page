@@ -15,6 +15,7 @@ const loadMenuTab = () => {
   const tabContent = document.getElementById('main');
   tabContent.innerHTML = '';
   tabContent.appendChild(createContent(menuContent));
+ 
 }
 
 

@@ -12,6 +12,8 @@ const loadContactTab = () => {
   const tabContent = document.getElementById('main');
   tabContent.innerHTML = '';
   tabContent.appendChild(createContent(contactContent));
+
+
 }
 
 

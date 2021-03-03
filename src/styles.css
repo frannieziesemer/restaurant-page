@@ -1,7 +1,9 @@
 body {
+  background-color: #505DBF;
+}
+#content {
   margin: 0px auto;
   height: 100%;
-  background-color: #505DBF;
 }
 #header-banner {
   display: flex;
@@ -22,6 +24,15 @@ body {
   opacity: 80%;
   font-family: 'Barlow', sans-serif;
 }
+
+#tabs-block button.active {
+  border-bottom: solid 2px #000c6b;
+}
+
+#tabs-block button.active:hover {
+  border-bottom: solid 2px #a2adffbb;
+}
+
 #tabs-block button {
   display: inline;
   font-family: 'Barlow Condensed', sans-serif;
@@ -30,12 +41,15 @@ body {
   font-size: 26px;
   border: none;
   background: none;
+  outline: none;
 
 }
 #tabs-block button:hover {
-  color: #000c6b;
+  color: #a2adffbb;
   cursor: pointer;
 }
+
+
 
 p {
 font-family: 'Barlow Condensed', sans-serif;
@@ -44,6 +58,7 @@ font-size: 20px;
 
 #main {
   margin: 0px auto;
-  width: 60vmax;
-  color: beige;
+  width: 70vmin;
+  color: #a2adffbb;
+  text-align: justify;
 }

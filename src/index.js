@@ -11,14 +11,31 @@ const addTabEvents = (() => {
   const menuTab = document.getElementById('menu');
   const contactTab = document.getElementById('contact');
 
-  aboutTab.addEventListener('click', loadAboutTab);
-  menuTab.addEventListener('click', loadMenuTab);
-  contactTab.addEventListener('click', loadContactTab);
+  aboutTab.addEventListener('click', function(event) {
+    handleClickEventStyles(event);
+    loadAboutTab();
+  });
+  menuTab.addEventListener('click', function(event) {
+    handleClickEventStyles(event);
+    loadMenuTab()
+  });
+  contactTab.addEventListener('click', function(event) {
+    handleClickEventStyles(event);
+    loadContactTab()
+  });
 
   })();
 
 
 
-
+function handleClickEventStyles(event) {
+  const tabButtons = document.querySelectorAll('.tab-button');
+  for(let i = 0; i < tabButtons.length; i++) {
+    tabButtons[i].classList.remove('active');
+  }
+  console.log(tabButtons);
+  const currentButton = event.target;
+  currentButton.classList.add('active');
+}
 
 
