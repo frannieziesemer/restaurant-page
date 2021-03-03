@@ -1,7 +1,7 @@
 body {
   margin: 0px auto;
   height: 100%;
-  background-color: #b0b9ff;
+  background-color: #505DBF;
 }
 #header-banner {
   display: flex;
@@ -18,17 +18,32 @@ body {
 }
 #title {
   margin: 0px;
-  color: #FFBF00;
+  color: #000c6b;
   opacity: 80%;
   font-family: 'Barlow', sans-serif;
 }
-#tabs-block h2 {
+#tabs-block button {
   display: inline;
   font-family: 'Barlow Condensed', sans-serif;
   margin: 20px;
-  color: #FFBF00;
+  color: #000c6b;
+  font-size: 26px;
+  border: none;
+  background: none;
+
+}
+#tabs-block button:hover {
+  color: #000c6b;
+  cursor: pointer;
 }
 
 p {
 font-family: 'Barlow Condensed', sans-serif;
+font-size: 20px;
+}
+
+#main {
+  margin: 0px auto;
+  width: 60vmax;
+  color: beige;
 }

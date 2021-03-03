@@ -1,30 +1,27 @@
 
-const createTitle = () => {
+const createTitle = (id, text) => {
   const title = document.createElement('h1');
-  title.setAttribute('id', 'title');
-  title.textContent = 'melon';
-
+  title.setAttribute('id', id);
+  title.textContent = text;
   return title;
+}
+
+const createButton = (id, text) => {
+  const button = document.createElement('button');
+  button.setAttribute('id', id);
+  button.classList.add('tab-button');
+  button.textContent = text;
+  return button;
 }
 
 const createTabsBlock = () => {
   const tabsBlock = document.createElement('div');
-  const menu = document.createElement('h2');
-  const about = document.createElement('h2');
-  const contact = document.createElement('h2');
-
+  
   tabsBlock.setAttribute('id', 'tabs-block');
-  about.setAttribute('id', 'about');
-  menu.setAttribute('id', 'menu');
-  contact.setAttribute('id', 'contact');
 
-  menu.textContent = 'menu';
-  about.textContent = 'about';
-  contact.textContent = 'contact';
-
-  tabsBlock.appendChild(menu);  
-  tabsBlock.appendChild(about);  
-  tabsBlock.appendChild(contact);
+  tabsBlock.appendChild(createButton('about', 'ABOUT'));  
+  tabsBlock.appendChild(createButton('menu', 'MENU'));  
+  tabsBlock.appendChild(createButton('contact', 'CONTACT'));  
 
   return tabsBlock;
 }
@@ -33,7 +30,7 @@ const createHeader = () => {
   const headerBanner = document.createElement('div');
   headerBanner.setAttribute('id', 'header-banner');
 
-  headerBanner.appendChild(createTitle());  
+  headerBanner.appendChild(createTitle('title', 'melon'));  
   headerBanner.appendChild(createTabsBlock());
   
   return headerBanner;
@@ -42,7 +39,6 @@ const createHeader = () => {
 const createMain = () => {
   const main = document.createElement('div');
   main.setAttribute('id', 'main')
-
   return main;
 }
 
@@ -52,7 +48,7 @@ const loadHome = () => {
   content.appendChild(createHeader());
   content.appendChild(createMain());
 
-  return content;
+  
 } 
 
 
