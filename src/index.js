@@ -1,3 +1,4 @@
+import './styles.css';
 import loadHome from './modules/layout.js';
 import loadAboutTab from './modules/about-tab.js';
 import loadMenuTab from './modules/menu-tab.js';
