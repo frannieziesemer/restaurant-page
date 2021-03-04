@@ -33,7 +33,7 @@ function handleClickEventStyles(event) {
   for(let i = 0; i < tabButtons.length; i++) {
     tabButtons[i].classList.remove('active');
   }
-  console.log(tabButtons);
+  
   const currentButton = event.target;
   currentButton.classList.add('active');
 }
