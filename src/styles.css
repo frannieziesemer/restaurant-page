@@ -71,11 +71,18 @@ font-size: 20px;
   bottom: 0;
   width: 100vw;
 }
-#git-link, #photo-cred {
-  display: block;
+#git-link {
+  padding-right: 5px;
+
 }
 
 a {
   color: #b5bdff;
 
+}
+
+.menu-item-wrapper, .contact-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
