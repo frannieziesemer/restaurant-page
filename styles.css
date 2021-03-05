@@ -12,7 +12,7 @@ body {
   margin: 0px auto;
   height: 75vmin;
   background-color: #505DBF;
-  background-image: url('/src/images/melon.jpg');
+  background-image: url('melon.jpg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
