@@ -1,0 +1,88 @@
+body {
+  background-color: #505DBF;
+}
+#content {
+  margin: 0px auto;
+  height: 100%;
+}
+#header-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0px auto;
+  height: 75vmin;
+  background-color: #505DBF;
+  background-image: url('/src/images/melon.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+#title {
+  margin: 0px;
+  color: #000c6b;
+  opacity: 80%;
+  font-family: 'Barlow', sans-serif;
+}
+
+#tabs-block button.active {
+  color: #a2adffbb;
+  border-bottom: solid 2px #a2adffbb;
+}
+
+#tabs-block button.active:hover {
+  border-bottom: solid 2px #a2adffbb;
+}
+
+#tabs-block button {
+  display: inline;
+  font-family: 'Barlow Condensed', sans-serif;
+  margin: 20px;
+  color: #000c6b;
+  font-size: 26px;
+  border: none;
+  background: none;
+  outline: none;
+
+}
+#tabs-block button:hover {
+  color: #a2adffbb;
+  cursor: pointer;
+}
+
+
+
+p {
+font-family: 'Barlow Condensed', sans-serif;
+font-size: 20px;
+}
+
+#main {
+  margin: 0px auto;
+  width: 70vmin;
+  color: #a2adffbb;
+  text-align: justify;
+}
+
+#links {
+  color: #000c6b;
+  font-family: 'Barlow Condensed', sans-serif;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+}
+#git-link {
+  padding-right: 5px;
+
+}
+
+a {
+  color: #b5bdff;
+
+}
+
+.menu-item-wrapper, .contact-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
