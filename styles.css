@@ -1,3 +1,7 @@
+:root {
+  --main-font-color: #51473A;
+}
+
 body {
   background-color: #ffff;
 }
@@ -16,7 +20,7 @@ body {
 }
 #title {
   margin: 0px;
-  color: #51473A;
+  color: var(--main-font-color);
   opacity: 80%;
   font-family: 'Barlow', sans-serif;
 }
@@ -30,8 +34,8 @@ body {
 
 }
 #tabs-block button.active {
-  color: #51473A;
-  border-bottom: solid 2px #51473A;
+  color: var(--main-font-color);
+  border-bottom: solid 2px var(--main-font-color);
 }
 
 #tabs-block button.active:hover {
@@ -42,7 +46,7 @@ body {
   display: inline;
   font-family: 'Barlow Condensed', sans-serif;
   margin: 20px;
-  color: #51473A;
+  color: var(--main-font-color);;
   font-size: 26px;
   border: none;
   background: rgba(255, 255, 255, 0.74);
@@ -53,7 +57,7 @@ body {
 
 
 #tabs-block button:hover {
-  color: #51473A;
+  color: var(--main-font-color);
   cursor: pointer;
 }
 
@@ -70,13 +74,7 @@ font-size: 20px;
   color: #51473abd;
 }
 
-#links {
-  color: #51473A;
-  font-family: 'Barlow Condensed', sans-serif;
-  position: fixed;
-  bottom: 0;
-  width: 100vw;
-}
+
 #git-link {
   padding-right: 5px;
 
@@ -86,4 +84,17 @@ font-size: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+#links {
+  color: var(--main-font-color);
+  font-family: 'Barlow Condensed', sans-serif;
+  position: fixed;
+  bottom: 0;
+  width: 100vmin;
+}
+
+#links#photo-cred svg {
+  color: var(--main-font-color);
+
 }
