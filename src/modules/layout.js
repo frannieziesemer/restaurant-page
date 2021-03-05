@@ -9,35 +9,41 @@ const createTitle = (id, text) => {
 const createButton = (id, text) => {
   const button = document.createElement('button');
   button.setAttribute('id', id);
+  button.setAttribute('role', 'tab');
+  button.setAttribute('aria-selected', false);
+  button.setAttribute('aria-controls', `panel-${id}`);
+  button.setAttribute('tabindex', -1);
+  
   button.classList.add('tab-button');
   button.textContent = text;
   return button;
 }
 
-const createTabsBlock = () => {
-  const tabsBlock = document.createElement('div');
+const createTabList = () => {
+  const tabList = document.createElement('div');
   
-  tabsBlock.setAttribute('id', 'tabs-block');
+  tabList.setAttribute('id', 'tabs-block');
+  tabList.setAttribute('role', 'tabList');
+  tabList.setAttribute('aria-label', 'Business Information');
 
-  tabsBlock.appendChild(createButton('about', 'ABOUT'));  
-  tabsBlock.appendChild(createButton('menu', 'MENU'));  
-  tabsBlock.appendChild(createButton('contact', 'CONTACT'));  
+  tabList.appendChild(createButton('about', 'ABOUT'));  
+  tabList.appendChild(createButton('menu', 'MENU'));  
+  tabList.appendChild(createButton('contact', 'CONTACT'));  
 
-  return tabsBlock;
+  return tabList;
 }
 
 const createHeader = () => {
   const headerBanner = document.createElement('div');
   headerBanner.setAttribute('id', 'header-banner');
 
-  headerBanner.appendChild(createTitle('title', 'melon'));  
-  headerBanner.appendChild(createTabsBlock());
+  headerBanner.appendChild(createTitle('title', 'toast'));  
   
   return headerBanner;
 }
 
 const createMain = () => {
-  const main = document.createElement('div');
+  const main = document.createElement('main');
   main.setAttribute('id', 'main')
   return main;
 }
@@ -46,6 +52,7 @@ const loadHome = () => {
   const content = document.getElementById('content');
 
   content.appendChild(createHeader());
+  content.appendChild(createTabList());
   content.appendChild(createMain());
 
   

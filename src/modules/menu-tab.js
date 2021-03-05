@@ -2,7 +2,7 @@ const menuFactory = (item, price) => {
   return { item, price };
 }
 
-let menuItems = [menuFactory('watermelon', 1), menuFactory('rockmelon', 10000), menuFactory('honeydew melon', 9) ];
+let menuItems = [menuFactory('burnt toast', 1), menuFactory('butter on toast', 10000), menuFactory('cold toast', 9) ];
 
 
 const createMenuContent = (menuArray) => {
