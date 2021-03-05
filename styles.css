@@ -1,52 +1,59 @@
 body {
-  background-color: #505DBF;
+  background-color: #ffff;
 }
 #content {
   margin: 0px auto;
   height: 100%;
 }
 #header-banner {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   margin: 0px auto;
-  height: 75vmin;
-  background-color: #505DBF;
-  background-image: url('melon.jpg');
+  height: 65vmin;
+  background-image: url('toast.jpg');
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   text-align: center;
 }
 #title {
   margin: 0px;
-  color: #000c6b;
+  color: #51473A;
   opacity: 80%;
   font-family: 'Barlow', sans-serif;
 }
 
+#tabs-block {
+  text-align: center;
+}
+
+#tabs-block button:focus {
+  border-top: solid 2px #946a34;
+
+}
 #tabs-block button.active {
-  color: #a2adffbb;
-  border-bottom: solid 2px #a2adffbb;
+  color: #51473A;
+  border-bottom: solid 2px #51473A;
 }
 
 #tabs-block button.active:hover {
-  border-bottom: solid 2px #a2adffbb;
+  border-bottom: solid 2px #51473A;
 }
 
 #tabs-block button {
   display: inline;
   font-family: 'Barlow Condensed', sans-serif;
   margin: 20px;
-  color: #000c6b;
+  color: #51473A;
   font-size: 26px;
   border: none;
-  background: none;
+  background: rgba(255, 255, 255, 0.74);
   outline: none;
-
 }
+
+
+
+
 #tabs-block button:hover {
-  color: #a2adffbb;
+  color: #51473A;
   cursor: pointer;
 }
 
@@ -60,12 +67,11 @@ font-size: 20px;
 #main {
   margin: 0px auto;
   width: 70vmin;
-  color: #a2adffbb;
-  text-align: justify;
+  color: #51473abd;
 }
 
 #links {
-  color: #000c6b;
+  color: #51473A;
   font-family: 'Barlow Condensed', sans-serif;
   position: fixed;
   bottom: 0;
@@ -73,11 +79,6 @@ font-size: 20px;
 }
 #git-link {
   padding-right: 5px;
-
-}
-
-a {
-  color: #b5bdff;
 
 }
 
